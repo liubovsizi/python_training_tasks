@@ -35,5 +35,13 @@ if __name__ == '__main__':
     runner_up = max(arr)
     print(runner_up)
 
+#SHORTEST
+if __name__ == '__main__':
+    n = int(input())
+    arr = list(map(int, input().split()))
+
+print(sorted(list(set(arr)))[-2])
+
+
 
 
