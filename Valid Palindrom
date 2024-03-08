@@ -1,0 +1,10 @@
+#https://leetcode.com/problems/valid-palindrome/description/
+#A phrase is a palindrome if, after converting all uppercase letters into lowercase letters and removing all non-alphanumeric characters, it reads the same forward and backward. Alphanumeric characters include letters and numbers.
+
+
+
+class Solution:
+    def isPalindrome(self, s: str) -> bool:
+        string_for_check = ''.join([c for c in s.lower() if c.isalnum()])
+        return string_for_check == string_for_check [::-1]
+        
